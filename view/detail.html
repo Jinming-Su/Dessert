@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=Edge">
+  <title>小琳甜品房</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="header">
+  <div class="nav">
+    <div class="navbar-brand">
+      <img class="img-circle" src="../img/logo.jpg" width="30px"/>
+      <span>小琳甜品房</span>
+    </div>
+    <ul class="nav navbar-menu">
+      <li><a id="home" href="../index.html">小琳主页</a></li>
+      <li><a id="catalog" href="../view/catalog1.html">甜品目录</a></li>
+      <li><a id="about" href="../view/about.html">关于小琳</a></li>
+    </ul>
+    <form class="navbar-form" role="search">
+      <div class="form-group">
+        <input class="form-control" placeholder="输入关键字..." type="text">
+      </div>
+      <button class="btn btn-warning" type="submit">搜索</button>
+    </form>
+    <ul class="nav navbar-menu-right pull-right">
+      <li><a id="login-btn" href="login.html">会员登录</a></li>
+      <li><a>会员注册</a></li>
+    </ul>
+  </div>
+</div>
+<div class="content">
+  <div class="catalog-panel">
+    <div class="panel panel-success">
+      <div class="panel-body">
+        <div class="col-md-7">
+          <img id="big-picture" src="" width="100%"/>
+        </div>
+        <div class="col-md-5" style="font-family: 'Microsoft YaHei'">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              产品名：处女冰淇淋
+            </div>
+            <div class="panel-body">
+              <span>上架时间： 2016年11月3日</span><br>
+              <span>产地：日本</span>
+            </div>
+            <div class="panel-footer">
+              <p>处女冰淇淋，原名面皮包水果冰淇淋，也叫优逸卷筒。日本甜品日本甜品
+                是来自日本的一种特色甜品。以原宿小店最为著名，只要开店，不管刮风下雨，酷暑寒冬，这里总有一条长长的人流，尤其吸引着全日本的少男少女们。店堂就是工场，冰淇淋全部要求现做，因为是手工操作，必须是清一色的是女孩子，甚至传说老板找的女孩子必须是全部是处女，所以也叫"处女冰淇淋"。这更加引起商家效应，介绍中称，这种面皮制作，拿在手里，吃在嘴里,犹如女孩细嫩的皮肤哦。
+                面皮包水果冰淇淋由做工细软的面皮包裹软冰淇淋制成，再配以新鲜水果佐味，使口感松软细腻，不但拥有糕点的精致，同时拥有冰淇淋的丝滑清凉，是对传统冰淇淋的全新诠释。
+                这里的面皮似乎做的更软更儒，吃起来舒服。任何水果都能和冰淇淋合作，而这类冰淇淋大多数采用北海道乳制品，所以感觉很香糯由于做工精细，原料新鲜，现做现买，皮是温热的，深得日本人喜爱的食品。一个电视节目报道称，这种面皮冰淇淋2007年在日本全国销售额达到2000亿日元，如果中国商家也能开辟这商机，相信应该是一个很好的卖点</p>
+            </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="height: 80px"></div>
+<div class="footer">
+  <p class="text-center">
+    ©Wang Jialin 2016. All rights reserved.
+  </p>
+</div>
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery-cookie.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/main.js"></script>
+<script>
+  $(function(){
+    $('#catalog').addClass('menu-hover');
+    $('#catalog1').addClass('catalog-active');
+    var a = location.search.substring(1).split("&");
+    var b = a[0].split('=')[1];
+    $('#big-picture').attr('src', '/Dessert/img/slider-'+ b +'.jpeg');
+  })
+</script>
+</body>
+</html>

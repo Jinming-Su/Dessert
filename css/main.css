@@ -1,0 +1,107 @@
+body {
+  background: url(../img/bg.gif);
+  height: 100%;
+}
+
+/*导航*/
+.header {
+  background-color: #3c8dbc;
+  height: 40px;
+}
+.navbar-brand img {
+  display: inline;
+  margin-top: -10px;
+}
+.navbar-brand span{
+  font-size: 30px;
+  color: #fff;
+}
+.navbar-menu {
+  float: left;
+}
+.navbar-menu li ,
+.navbar-menu-right li{
+  float: left;
+}
+.navbar-menu li a{
+  font-size: 20px;
+  color: #fff;
+}
+.navbar-menu-right li a {
+  font-size: 18px;
+  color: #3c8dbc;
+}
+.navbar-menu li a:hover {
+  background-color: #367fa9;
+}
+.navbar-menu-right li {
+  background-color: pink;
+  height: 40px;
+}
+.navbar-form {
+  float: left;
+  margin: 0;
+  margin-top: 2px;
+}
+.auth-hover {
+  background-color: #eee;
+}
+.menu-hover {
+  background-color: #367fa9;
+}
+
+/*footer*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #aaa;
+  width: 100%;
+  height: 40px;
+}
+.footer p {
+  margin-top: 8px;
+}
+
+/*login*/
+.login-panel {
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 33%;
+  padding: 40px;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: solid 5px pink;
+}
+.login-panel h3 {
+  color: pink;
+  font-family: "Microsoft YaHei";
+}
+.login-form {
+  display: block;
+}
+
+/*catalog*/
+.catalog-panel {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.catalog-box {
+  width: 30%;
+  height: 300px;
+  float: left;
+  margin-left: 2%;
+}
+.catalog-box .panel-body {
+  padding: 0;
+}
+.catalog-box .panel-body img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.catalog-active {
+  background-color: #ccc;
+}
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=Edge">
+  <title>小琳甜品房</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/slider.css">
+</head>
+<body>
+  <div class="header">
+    <div class="nav">
+      <div class="navbar-brand">
+        <img class="img-circle" src="img/logo.jpg" width="30px"/>
+        <span>小琳甜品房</span>
+      </div>
+      <ul class="nav navbar-menu">
+        <li><a id="home" href="#">小琳主页</a></li>
+        <li style="position: relative">
+          <a id="catalog" href="view/catalog1.html">甜品目录</a>
+        </li>
+        <li><a id="about" href="view/about.html">关于小琳</a></li>
+      </ul>
+      <form class="navbar-form" role="search">
+        <div class="form-group">
+          <input class="form-control" placeholder="输入关键字..." type="text">
+        </div>
+        <button class="btn btn-warning" type="submit">搜索</button>
+      </form>
+      <ul class="nav navbar-menu-right pull-right">
+        <li><a id="login-btn" href="view/login.html">会员登录</a></li>
+        <li><a>会员注册</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="content">
+    <div class="slider">
+      <ul class="slider-main">
+        <li class="slider-panel">
+          <img alt="关注小琳甜品房" title="关注小琳甜品房" src="img/slider-1.jpeg"></a>
+        </li>
+        <li class="slider-panel">
+          <img alt="关注小琳甜品房" title="关注小琳甜品房" src="img/slider-2.jpeg"></a>
+        </li>
+        <li class="slider-panel">
+          <img alt="关注小琳甜品房" title="关注小琳甜品房" src="img/slider-3.jpg"></a>
+        </li>
+        <li class="slider-panel">
+          <img alt="关注小琳甜品房" title="关注小琳甜品房" src="img/slider-4.jpg"></a>
+        </li>
+      </ul>
+      <div class="slider-extra">
+        <ul class="slider-nav">
+          <li class="slider-item">1</li>
+          <li class="slider-item">2</li>
+          <li class="slider-item">3</li>
+          <li class="slider-item">4</li>
+        </ul>
+        <div class="slider-page">
+          <a class="slider-pre" href="javascript:;;"><</a>
+          <a class="slider-next" href="javascript:;;">></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <p class="text-center">
+      ©Wang Jialin 2016. All rights reserved.
+    </p>
+  </div>
+  <!-- JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-cookie.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slider.js" type="text/javascript"></script>
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(function(){
+      $('#home').addClass('menu-hover');
+    })
+  </script>
+</body>
+</html>

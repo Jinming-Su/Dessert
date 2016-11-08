@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=Edge">
+  <title>小琳甜品房</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="header">
+  <div class="nav">
+    <div class="navbar-brand">
+      <img class="img-circle" src="../img/logo.jpg" width="30px"/>
+      <span>小琳甜品房</span>
+    </div>
+    <ul class="nav navbar-menu">
+      <li><a id="home" href="../index.html">小琳主页</a></li>
+      <li><a id="catalog" href="../view/catalog1.html">甜品目录</a></li>
+      <li><a id="about" href="../view/about.html">关于小琳</a></li>
+    </ul>
+    <form class="navbar-form" role="search">
+      <div class="form-group">
+        <input class="form-control" placeholder="输入关键字..." type="text">
+      </div>
+      <button class="btn btn-warning" type="submit">搜索</button>
+    </form>
+    <ul class="nav navbar-menu-right pull-right">
+      <li><a id="login-btn" href="login.html">会员登录</a></li>
+      <li><a>会员注册</a></li>
+    </ul>
+  </div>
+</div>
+<div class="content">
+  <div class="catalog-panel">
+    <div class="panel panel-success">
+      <div class="panel-body">
+        <ul class="list-group">
+          <li class="list-group-item">
+            店面历史<br>
+          </li>
+          <li class="list-group-item">
+            产品定位<br>
+          </li>
+          <li class="list-group-item">
+            产品文化<br>
+          </li>
+          <li class="list-group-item">
+            招聘<br>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div style="height: 80px"></div>
+<div class="footer">
+  <p class="text-center">
+    ©Wang Jialin 2016. All rights reserved.
+  </p>
+</div>
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery-cookie.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/main.js"></script>
+<script>
+  $(function(){
+    $('#about').addClass('menu-hover');
+</script>
+</body>
+</html>

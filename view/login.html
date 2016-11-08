@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=Edge">
+  <title>小琳甜品房</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/Dessert/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/Dessert/css/main.css">
+</head>
+<body>
+<div class="header">
+  <div class="nav">
+    <div class="navbar-brand">
+      <img class="img-circle" src="/Dessert/img/logo.jpg" width="30px"/>
+      <span>小琳甜品房</span>
+    </div>
+    <ul class="nav navbar-menu">
+      <li><a href="/Dessert/index.html">小琳主页</a></li>
+      <li><a href="/Dessert/view/catalog1.html">甜品目录</a></li>
+      <li><a id="about" href="/Dessert/view/about.html">关于小琳</a></li>
+    </ul>
+    <form class="navbar-form" role="search">
+      <div class="form-group">
+        <input class="form-control" placeholder="输入关键字..." type="text">
+      </div>
+      <button class="btn btn-warning" type="submit">搜索</button>
+    </form>
+    <ul class="nav navbar-menu-right pull-right">
+      <li><a id="login-btn" href="login.html">会员登录</a></li>
+      <li><a>会员注册</a></li>
+    </ul>
+  </div>
+</div>
+<div class="content">
+  <div class="login-panel">
+    <h3 class="text-center">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</h3>
+    <br>
+    <form class="login-form" method="post" role="login">
+      <div class="form-group">
+        <label>用户名：</label>
+        <input class="form-control" id="login-username" type="text" name="username">
+      </div>
+      <div class="form-group">
+        <label>密码：</label>
+        <input class="form-control" id="login-password" type="password" name="password">
+      </div>
+      <a class="btn btn-success" onclick="onClickLogin()">登录</a>
+    </form>
+  </div>
+</div>
+<div class="footer">
+  <p class="text-center">
+    ©Wang Jialin 2016. All rights reserved.
+  </p>
+</div>
+<!-- JS -->
+<script src="/Dessert/js/jquery.min.js"></script>
+<script src="/Dessert/js/jquery-cookie.min.js"></script>
+<script src="/Dessert/js/bootstrap.min.js"></script>
+<script src="/Dessert/js/common.js"></script>
+<script src="/Dessert/js/main.js"></script>
+<script>
+  $(function(){
+    $('#login-btn').addClass('auth-hover');
+  })
+</script>
+</body>
+</html>
